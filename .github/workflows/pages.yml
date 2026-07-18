@@ -22,12 +22,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      # One-time setup: enable Pages once at Settings → Pages → Source: GitHub Actions.
+      # (Auto-enable via `enablement: true` needs org permission most orgs withhold.)
       - uses: actions/configure-pages@v5
-        with:
-          # Auto-enable Pages on first run so template adopters don't have to
-          # click anything. If org policy blocks API enablement, enable manually:
-          # Settings → Pages → Source: GitHub Actions.
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
