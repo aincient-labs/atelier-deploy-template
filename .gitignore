@@ -1,0 +1,6 @@
+# Local host/CLI cruft
+.DS_Store
+.netlify/
+.vercel/
+.wrangler/
+node_modules/

@@ -1,0 +1,5 @@
+# Atelier deploy template — Netlify config.
+# The static export lives in site/. No build step: Atelier already built the site.
+[build]
+  publish = "site"
+  command = ""

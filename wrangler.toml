@@ -1,0 +1,4 @@
+# Atelier deploy template — Cloudflare Pages config.
+# Deploy with:  wrangler pages deploy site
+name = "atelier-site"
+pages_build_output_dir = "site"
