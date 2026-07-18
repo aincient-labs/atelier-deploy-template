@@ -19,8 +19,10 @@ every host below is pre-configured to publish that folder as-is.
 
 ## Use it
 
-1. **Get your own copy.** Click **“Use this template” → Create a new repository** at the top of this repo
-   (or clone it).
+[![Use this template](https://img.shields.io/badge/Use%20this%20template-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aincient-labs/atelier-deploy-template/generate)
+
+1. **Get your own copy.** Click **“Use this template” → Create a new repository** above (or the badge), or
+   clone it.
 2. **Add your export.** Build it against your final domain, then replace the contents of `site/` with it:
    ```bash
    drush aex --base-url https://your-domain.com --out /path/to/your-repo/site
@@ -31,10 +33,12 @@ every host below is pre-configured to publish that folder as-is.
 ## One-click deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aincient-labs/atelier-deploy-template)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/aincient-labs/atelier-deploy-template)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aincient-labs/atelier-deploy-template)
 
-> The buttons deploy this template as-is (you'll see the placeholder page). After it's connected, push your
-> export to `site/` and the host redeploys automatically.
+> These buttons deploy the template as-is — you'll first see the placeholder page. Once the host is connected,
+> push your own export to `site/` and it redeploys automatically. For **GitHub Pages**, use the **“Use this
+> template”** badge above instead, then enable Pages once (see the table below).
 
 ## Per-host notes
 
